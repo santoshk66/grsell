@@ -8,7 +8,7 @@ android {
     defaultConfig {
         applicationId "com.groupsale.Lootlo"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 3
         versionName "1.2"
         multiDexEnabled true
@@ -25,6 +25,13 @@ android {
     dependenciesInfo {
         includeInApk true
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
 }
 
 dependencies {
@@ -48,6 +55,7 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.0-rc01'
     implementation 'androidx.cardview:cardview:1.0.0'
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
@@ -65,8 +73,8 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:3.8.0'
     implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.7'
 
-
-
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
 
 

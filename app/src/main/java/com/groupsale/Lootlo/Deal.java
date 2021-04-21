@@ -70,7 +70,7 @@ public class Deal extends Fragment {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
 
-        webView.addJavascriptInterface(new WebAppInterface(this), "Android");
+        webView.addJavascriptInterface(new WebAppInterface(getActivity().getApplicationContext()), "Android");
         return v;
     }
 

@@ -110,12 +110,12 @@ public class Join extends Fragment {
         FirebaseRecyclerAdapter<deal, dealHolder> adapter = new FirebaseRecyclerAdapter<deal, dealHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull dealHolder holder, int position, @NonNull deal model) {
-                holder.textView.setText(model.getDummyName());
+                //holder.textView.setText(model.getDummyName());
 
 
-                holder.textView2.setText(model.getDummyBelowText());
-                holder.textview3.setText(model.getDummyTime());
-                Picasso.with(getContext()).load(model.getDummyImageURL()).into(holder.imageView);
+               // holder.textView2.setText(model.getDummyBelowText());
+                //holder.textview3.setText(model.getDummyTime());
+                //Picasso.with(getContext()).load(model.getDummyImageURL()).into(holder.imageView);
 
             }
 

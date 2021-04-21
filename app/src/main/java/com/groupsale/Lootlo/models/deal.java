@@ -1,57 +1,42 @@
 package com.groupsale.Lootlo.models;
 
 public class deal {
-    int pinCode,neededSubscriber,dealPrice;
-    String dealID,productID,textMessage,dummyName,dummyImageURL,dummyBelowText,dummyTime;
-    //left currentSubscriber,creation,count,status,audioMessage
-
-
-    public deal(int pinCode, int neededSubscriber, int dealPrice, String dealID, String productID, String textMessage, String dummyName, String dummyImageURL, String dummyBelowText, String dummyTime) {
-        this.pinCode = pinCode;
-        this.neededSubscriber = neededSubscriber;
-        this.dealPrice = dealPrice;
-        this.dealID = dealID;
-        this.productID = productID;
-        this.textMessage = textMessage;
-        this.dummyName = dummyName;
-        this.dummyImageURL = dummyImageURL;
-        this.dummyBelowText = dummyBelowText;
-        this.dummyTime = dummyTime;
-    }
+    int pinCode,teamSize,dealPrice;
+    String dealID,productID,textMessage,description,name,creatorID,dateTime;
+    String[] currentSubscribers,imageUrl;
 
     public deal() {
     }
 
-    public String getDummyName() {
-        return dummyName;
+    public deal(int pinCode, int teamSize, int dealPrice, String dealID, String productID, String textMessage, String description, String name, String creatorID, String dateTime, String[] currentSubscribers, String[] imageUrl) {
+        this.pinCode = pinCode;
+        this.teamSize = teamSize;
+        this.dealPrice = dealPrice;
+        this.dealID = dealID;
+        this.productID = productID;
+        this.textMessage = textMessage;
+        this.description = description;
+        this.name = name;
+        this.creatorID = creatorID;
+        this.dateTime = dateTime;
+        this.currentSubscribers = currentSubscribers;
+        this.imageUrl = imageUrl;
     }
 
-    public void setDummyName(String dummyName) {
-        this.dummyName = dummyName;
+    public String getDateTime() {
+        return dateTime;
     }
 
-    public String getDummyImageURL() {
-        return dummyImageURL;
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
-    public void setDummyImageURL(String dummyImageURL) {
-        this.dummyImageURL = dummyImageURL;
+    public String[] getImageUrl() {
+        return imageUrl;
     }
 
-    public String getDummyBelowText() {
-        return dummyBelowText;
-    }
-
-    public void setDummyBelowText(String dummyBelowText) {
-        this.dummyBelowText = dummyBelowText;
-    }
-
-    public String getDummyTime() {
-        return dummyTime;
-    }
-
-    public void setDummyTime(String dummyTime) {
-        this.dummyTime = dummyTime;
+    public void setImageUrl(String[] imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public int getPinCode() {
@@ -62,12 +47,12 @@ public class deal {
         this.pinCode = pinCode;
     }
 
-    public int getNeededSubscriber() {
-        return neededSubscriber;
+    public int getTeamSize() {
+        return teamSize;
     }
 
-    public void setNeededSubscriber(int neededSubscriber) {
-        this.neededSubscriber = neededSubscriber;
+    public void setTeamSize(int teamSize) {
+        this.teamSize = teamSize;
     }
 
     public int getDealPrice() {
@@ -101,4 +86,41 @@ public class deal {
     public void setTextMessage(String textMessage) {
         this.textMessage = textMessage;
     }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCreatorID() {
+        return creatorID;
+    }
+
+    public void setCreatorID(String creatorID) {
+        this.creatorID = creatorID;
+    }
+
+    public String[] getCurrentSubscribers() {
+        return currentSubscribers;
+    }
+
+    public void setCurrentSubscribers(String[] currentSubscribers) {
+        this.currentSubscribers = currentSubscribers;
+    }
+
+    //left dateTime
+
+
+
 }

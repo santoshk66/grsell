@@ -3,6 +3,7 @@ package com.groupsale.Lootlo;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -12,8 +13,23 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.groupsale.Lootlo.models.items;
+import com.groupsale.Lootlo.models.products;
+import com.groupsale.Lootlo.retrofit.ApiInterface;
+import com.groupsale.Lootlo.retrofit.RetrofitClientInstance;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
 
 public class Splash extends AppCompatActivity {
 
@@ -37,6 +53,8 @@ public class Splash extends AppCompatActivity {
         textView = findViewById(R.id.text_view);
 
 
+
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Animation animation1 = AnimationUtils.loadAnimation(this,R.anim.top_wave);
@@ -48,7 +66,7 @@ public class Splash extends AppCompatActivity {
                 PropertyValuesHolder.ofFloat("scaleX",1.2f),
                 PropertyValuesHolder.ofFloat("scaleY",1.2f)
         );
-        objectAnimator.setDuration(500);
+        objectAnimator.setDuration(1000);
         objectAnimator.setRepeatCount(ValueAnimator.INFINITE);
         objectAnimator.setRepeatMode(ValueAnimator.REVERSE);
         objectAnimator.start();
@@ -68,6 +86,8 @@ public class Splash extends AppCompatActivity {
                 introScreen = getSharedPreferences("introScreen",MODE_PRIVATE);
                 boolean isFirstTime = introScreen.getBoolean("firstTime",true);
 
+
+
                if(isFirstTime) {
 
                    SharedPreferences.Editor editor = introScreen.edit();
@@ -80,7 +100,7 @@ public class Splash extends AppCompatActivity {
              }
                else
                {
-                   startActivity(new Intent(Splash.this, Register.class)
+                   startActivity(new Intent(Splash.this, MainActivity.class)
                            .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
                }
 

@@ -1,28 +1,22 @@
 package com.groupsale.Lootlo.models;
 
 public class customer {
-    String _id,customerID,firstName,lastName,emailID;
-    deal[] leadDeal;
-    deal[] currentDeal;
+    String  customerID, name,  phoneNumber,createdAt;
+    String[] leadDeal;
+    String[] currentDeal;
     // left refer schema
 
 
-    public customer(String _id, String customerID, String firstName, String lastName, String emailID, deal[] leadDeal, deal[] currentDeal) {
-        this._id = _id;
+    public customer() {
+    }
+
+    public customer(String customerID, String name, String phoneNumber, String createdAt, String[] leadDeal, String[] currentDeal) {
         this.customerID = customerID;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.emailID = emailID;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.createdAt = createdAt;
         this.leadDeal = leadDeal;
         this.currentDeal = currentDeal;
-    }
-
-    public String get_id() {
-        return _id;
-    }
-
-    public void set_id(String _id) {
-        this._id = _id;
     }
 
     public String getCustomerID() {
@@ -33,43 +27,43 @@ public class customer {
         this.customerID = customerID;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public String getEmailID() {
-        return emailID;
+    public String getCreatedAt() {
+        return createdAt;
     }
 
-    public void setEmailID(String emailID) {
-        this.emailID = emailID;
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 
-    public deal[] getLeadDeal() {
+    public String[] getLeadDeal() {
         return leadDeal;
     }
 
-    public void setLeadDeal(deal[] leadDeal) {
+    public void setLeadDeal(String[] leadDeal) {
         this.leadDeal = leadDeal;
     }
 
-    public deal[] getCurrentDeal() {
+    public String[] getCurrentDeal() {
         return currentDeal;
     }
 
-    public void setCurrentDeal(deal[] currentDeal) {
+    public void setCurrentDeal(String[] currentDeal) {
         this.currentDeal = currentDeal;
     }
 }

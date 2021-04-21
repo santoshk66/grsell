@@ -11,4 +11,6 @@
     <color name="whatsapp">#4FCE5D</color>
     <color name="secondary_color">#fbff0f</color>
     <color name="main_color">#fbff0f</color>
+    <color name="GREEN">#00FF00</color>
+    <color name="DARKGREEN">#008000</color>
 </resources>

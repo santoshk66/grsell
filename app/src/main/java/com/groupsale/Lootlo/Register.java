@@ -43,16 +43,16 @@ public class Register extends AppCompatActivity {
         waveHeader.isRunning();
         waveHeader.setGradientAngle(45);
         waveHeader.setWaveHeight(40);
-        waveHeader.setStartColor(Color.CYAN);
-        waveHeader.setCloseColor(Color.BLUE);
+        waveHeader.setStartColor(R.color.GREEN);
+        waveHeader.setCloseColor(R.color.DARKGREEN);
 
         waveFooter.setVelocity(1);
         waveFooter.setProgress(1);
         waveFooter.isRunning();
         waveFooter.setGradientAngle(45);
         waveFooter.setWaveHeight(40);
-        waveFooter.setStartColor(Color.RED);
-        waveFooter.setCloseColor(Color.YELLOW);
+        waveFooter.setStartColor(R.color.GREEN);
+        waveFooter.setCloseColor(R.color.DARKGREEN);
 
         spinner = findViewById(R.id.spinnerCountries);
         spinner.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, CountryData.countryNames));

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Register">
 
+
     <com.scwang.wave.MultiWaveHeader
         android:id="@+id/wave_header"
         android:layout_width="match_parent"
@@ -33,7 +34,7 @@
                 android:id="@+id/linearLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimaryDark"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -41,10 +42,10 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="20dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorPrimaryDark"
                     android:padding="10dp"
                     android:src="@drawable/img_register"
-                    app:tint="@android:color/white" />
+                    app:tint="@color/colorAccent" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -53,7 +54,7 @@
                     android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif-medium"
                     android:text="REGISTER"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/colorAccent"
                     android:textSize="22sp" />
 
             </LinearLayout>
@@ -81,10 +82,10 @@
                     android:id="@+id/imgView_userIcon"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorPrimaryDark"
                     android:padding="8dp"
                     android:src="@drawable/ic_baseline_person_24"
-                    app:tint="@android:color/white" />
+                    app:tint="@color/colorAccent" />
 
                 <EditText
                     android:id="@+id/usname"
@@ -93,7 +94,7 @@
                     android:layout_alignBottom="@+id/imgView_userIcon"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imgView_userIcon"
-                    android:background="@android:color/white"
+                    android:background="@color/colorAccent"
                     android:hint="Username"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
@@ -114,10 +115,10 @@
                     android:id="@+id/imgView_phoneIcon"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorPrimaryDark"
                     android:padding="8dp"
                     android:src="@drawable/ic_baseline_phone_24"
-                    app:tint="@android:color/white" />
+                    app:tint="@color/colorAccent" />
 
                 <EditText
                     android:id="@+id/editTextPhone"
@@ -126,8 +127,8 @@
                     android:layout_alignBottom="@+id/imgView_phoneIcon"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imgView_phoneIcon"
-                    android:background="@android:color/white"
-                    android:hint="Phone number"
+                    android:background="@color/colorAccent"
+                    android:hint="Phone Number"
                     android:maxLength="10"
                     android:inputType="phone"
                     android:paddingLeft="20dp"
@@ -148,10 +149,10 @@
                     android:id="@+id/imgView_PincodeIcon"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@color/colorPrimary"
+                    android:background="@color/colorPrimaryDark"
                     android:padding="8dp"
                     android:src="@drawable/ic_baseline_add_location_alt_24"
-                    app:tint="@android:color/white" />
+                    app:tint="@color/colorAccent" />
 
                 <EditText
                     android:id="@+id/Deliverypincode"
@@ -160,7 +161,7 @@
                     android:layout_alignBottom="@+id/imgView_PincodeIcon"
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imgView_PincodeIcon"
-                    android:background="@android:color/white"
+                    android:background="@color/colorAccent"
                     android:hint="Delivery Pincode"
                     android:maxLength="6"
                     android:inputType="number"
@@ -176,20 +177,21 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/relativeLayout3"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="56dp"
                 android:layout_marginRight="30dp"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimaryDark"
                 android:fontFamily="sans-serif-medium"
                 android:text="SIGN UP"
-                android:textColor="@android:color/white" />
+                android:textColor="@color/colorAccent" />
+
             <Spinner
                 android:layout_below="@id/buttonContinue"
                 android:id="@+id/spinnerCountries"
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"
                 android:layout_width="120dp"
-                android:layout_height="wrap_content" />
-
+                android:layout_height="wrap_content"
+                android:visibility="invisible"/>
 
         </RelativeLayout>
 

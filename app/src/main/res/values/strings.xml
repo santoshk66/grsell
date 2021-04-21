@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Grousale</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_main">MainActivity</string>
@@ -32,5 +32,7 @@
     values-round/strings.xml for round devices.
     -->
     <string name="hello_world">Hello Square World!</string>
+    <string name="didn_t_recieve_the_otp" tools:ignore="StringEscaping">Didn't recieve the OTP</string>
+    <string name="resend_otp">RESEND OTP</string>
 
 </resources>

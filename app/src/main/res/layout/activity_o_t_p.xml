@@ -28,6 +28,7 @@
         tools:layout_editor_absoluteY="57dp"
         android:gravity="center_horizontal" />
 
+
     <Button
         android:id="@+id/buttonSignIn"
         android:layout_width="227dp"
@@ -62,5 +63,35 @@
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
         android:scaleY="-1" />
+
+    <TextView
+        android:layout_width="267dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="307dp"
+        android:text="@string/didn_t_recieve_the_otp"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/ResendOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="330dp"
+        android:text="@string/resend_otp"
+        android:textColor="@color/Red"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
